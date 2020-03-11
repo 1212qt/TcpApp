@@ -1,0 +1,71 @@
+{
+  "Ip": "192.168.0.56",
+  "Port": 17825,
+
+  "WritableParameters": [
+    {
+      "name": "Mode",
+      "type": "int",
+      "min": 0,
+      "max": 10,
+      "address": "0x0100"
+    },
+    {
+      "name": "Liczba probek",
+      "type": "int",
+      "min": 0,
+      "max": 2,
+      "address": "0x0104"
+    },
+    {
+      "name": "Poziom wyzwolenia",
+      "type": "double",
+      "min": 0,
+      "max": 10,
+      "address": "0x0110"
+    }
+  ],
+
+  "ReadableParameters": [
+    {
+      "name": "Mode",
+      "type": "int",
+      "address": "0x0100"
+    },
+
+    {
+      "name": "Liczba probek",
+      "type": "int",
+      "address": "0x0104"
+    },
+
+    {
+      "name": "Poziom wyzwolenia",
+      "type": "double",
+      "address": "0x0110"
+    }
+  ],
+
+  "Charts": [
+    {
+      "title": "Napięcie sieci V[ms]",
+      "data": [
+        {
+          "row": 0,
+          "label": "Ua"
+        },
+
+        {
+          "row": 2,
+          "label": "Ub"
+        },
+
+        {
+          "row": 3,
+          "label": "Uc"
+        }
+
+      ]
+    }
+  ]
+}
